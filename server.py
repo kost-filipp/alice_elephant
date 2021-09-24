@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 sessionStorage = {}
 
 
-@app.route('/post', methods=['POST'])
+@app.route('/', methods=['GET'])
 
 def main():
     logging.info(f'Request: {request.json!r}')
